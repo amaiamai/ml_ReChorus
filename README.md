@@ -1,11 +1,10 @@
 ## Denoising Implicit Feedback for Recommendation Based on ReChorus Framework:
 
 本项目基于 ReChorus 框架，旨在复现 Denoising Implicit Feedback for Recommendation 这篇论文的自适应去噪训练（ADT）策略。ReChorus 是一个开源的推荐系统框架，用于处理多种推荐算法的研究和复现工作。ADT策略旨在解决推荐系统中隐式反馈数据存在噪声的问题，通过动态修剪大损失交互，有效减少了隐式反馈中噪声的影响，提高了推荐系统的性能。
-- **Flexible**: implement new readers or runners for different datasets and experimental settings, and each model can be assigned with specific helpers.
 
 ## Structure
 
-Generally, ReChorus decomposes the whole process into three modules:
+
 
 - `src/`: 包含模型实现代码
   - `MY_MODEL.py`: 基于NeuMF模型实现的基本模型
